@@ -5,7 +5,7 @@ export default function PreLoader() {
     <div id="preloader">
       <div>
         <img src="assets/img/giphy.gif" alt="" />
-        <h4>The Juju Genies are coming...</h4>
+        <h4>The JuJu Genies are coming...</h4>
       </div>
     </div>
   );

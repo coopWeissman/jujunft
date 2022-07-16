@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# Welcome to HashLips 👄
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://github.com/HashLips/hashlips_nft_minting_dapp/blob/main/logo.png)
 
-## Available Scripts
+All the code in these repos was created and explained by HashLips on the main YouTube channel.
 
-In the project directory, you can run:
+To find out more please visit:
 
-### `npm start`
+[📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[👄 Discord](https://discord.com/invite/qh6MWhMJDN)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[💬 Telegram](https://t.me/hashlipsnft)
 
-### `npm test`
+[🐦 Twitter](https://twitter.com/hashlipsnft)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[ℹ️ Website](https://hashlips.online/HashLips)
 
-### `npm run build`
+# HashLips NFT minting dapp 🔥
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](https://github.com/HashLips/hashlips_nft_minting_dapp/blob/main/banner.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This repo provides a nice and easy way for linking an existing NFT smart contract to this minting dapp. There are two ways of using this repo, you can go the simple route or the more complex one.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The simple route is so simple, all you need to do is download the build folder on the release page and change the configuration to fit your needs. (Follow the video for a walk through).
 
-### `npm run eject`
+The more complex route allows you to add additional functionality if you are comfortable with coding in react.js. (Follow the below instructions for a walk through).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation 🛠️
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you are cloning the project then run this first, otherwise you can download the source code on the release page and skip this step.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+git clone https://github.com/HashLips/hashlips_nft_minting_dapp.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Make sure you have node.js installed so you can use npm, then run:
 
-## Learn More
+```sh
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage ℹ️
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In order to make use of this dapp, all you need to do is change the configurations to point to your smart contract as well as update the images and theme file.
 
-### Code Splitting
+For the most part all the changes will be in the `public` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To link up your existing smart contract, go to the `public/config/config.json` file and update the following fields to fit your smart contract, network and marketplace details. The cost field should be in wei.
 
-### Analyzing the Bundle Size
+Note: this dapp is designed to work with the intended NFT smart contract, that only takes one parameter in the mint function "mintAmount". But you can change that in the App.js file if you need to use a smart contract that takes 2 params.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```json
+{
+  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Nerdy Coder Clones",
+  "SYMBOL": "NCC",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": 0.075,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "OpenSea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+  "SHOW_BACKGROUND": true
+}
+```
 
-### Making a Progressive Web App
+Make sure you copy the contract ABI from remix and paste it in the `public/config/abi.json` file.
+(follow the youtube video if you struggle with this part).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Now you will need to create and change 2 images and a gif in the `public/config/images` folder, `bg.png`, `example.gif` and `logo.png`.
 
-### Advanced Configuration
+Next change the theme colors to your liking in the `public/config/theme.css` file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```css
+:root {
+  --primary: #ebc908;
+  --primary-text: #1a1a1a;
+  --secondary: #ff1dec;
+  --secondary-text: #ffffff;
+  --accent: #ffffff;
+  --accent-text: #000000;
+}
+```
 
-### Deployment
+Now you will need to create and change the `public/favicon.ico`, `public/logo192.png`, and
+`public/logo512.png` to your brand images.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Remember to update the title and description the `public/index.html` file
 
-### `npm run build` fails to minify
+```html
+<title>Nerdy Coder Clones</title>
+<meta name="description" content="Mint your Nerdy Coder Clone NFT" />
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Also remember to update the short_name and name fields in the `public/manifest.json` file
+
+```json
+{
+  "short_name": "NCC",
+  "name": "Coder Clone NFT"
+}
+```
+
+After all the changes you can run.
+
+```sh
+npm run start
+```
+
+Or create the build if you are ready to deploy.
+
+```sh
+npm run build
+```
+
+Now you can host the contents of the build folder on a server.
+
+That's it! you're done.

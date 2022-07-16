@@ -26,7 +26,7 @@ export default function VideoSection() {
               Over 3,000 years ago a spell was cast that imprisoned 10,000 genies in a single gold
               lamp. These genies had become forgotten, lost, and hopeless. It was until very
               recently that something has changed. For the first time in 3 millennia the lamp is
-              stirring, the lamp is shaking, and the lamp is ready to explode. The Juju Genies are
+              stirring, the lamp is shaking, and the lamp is ready to explode. The JuJu Genies are
               coming…
             </p>
           </div>

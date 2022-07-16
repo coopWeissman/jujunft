@@ -1,8 +1,10 @@
 import React from 'react';
+import Mint from './Minter';
 
 export default function Hero() {
   return (
     <section className="hero-zoom-in d-flex align-items-center" id="hero">
+   
       <div className="flex-slider">
         <ul className="slides">
           <li>
@@ -19,6 +21,8 @@ export default function Hero() {
               </div>
             </div>
           </li>
+          {/* <center><Mint/></center> */}
+
         </ul>
       </div>
     </section>

@@ -1,13 +1,14 @@
 import React from 'react';
 import JumpToTop from '../../components/common/JumpToTop';
 import PreLoader from '../../components/common/PreLoader';
-import Connect from './connector/Connect';
+import Apps from './Apps';
 import FreequentlyQuestion from './freequently-question/FreequentlyQuestion';
 import Header from './header/Header';
 import Hero from './Hero';
 import Roadmap from './Roadmap';
 import Team from './team/Team';
 import VideoSection from './VideoSection';
+import Mint from './Minter';
 
 export default function Home() {
   return (
@@ -15,13 +16,13 @@ export default function Home() {
       <Header />
       <main id="main">
         <Hero />
-        <Connect/>
+        <Apps/>
         <VideoSection />
-        <Roadmap />
+        {/* <Roadmap /> */}
         <Team />
         <FreequentlyQuestion />
       </main>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <JumpToTop />
     </div>
   );
