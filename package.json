@@ -1,7 +1,7 @@
 {
-  "name": "hashlips_nft_minting_dapp",
+  "name": "JuJu Genie",
   "version": "1.0.0",
-  "description": "HashLips minting dapp is a quick and easy way to connect your smart contract and start minting NFTs.",
+  "description": "the ju ju mint site",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -18,11 +18,11 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "author": "Daniel Eugene Botha (HashLips)",
+  "author": "WeiDEV",
   "license": "MIT",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build"
+    "build": "react-scripts --openssl-legacy-provider build"
   },
   "browserslist": {
     "production": [
