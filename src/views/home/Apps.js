@@ -99,14 +99,14 @@ function Apps() {
   const blockchain = useSelector((state) => state.blockchain);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
-  const [mintAmount, setMintAmount] = useState(1);
+  const [mintAmount, setMintAmount] = useState(5);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "0xF2DD3DDBaa70d8C474E7052D3cd2CF9aeF09Cf32",
+    CONTRACT_ADDRESS: "0x9cA747C57621705BA102c1B37eF07174Ac43740F",
     SCAN_LINK: "",
     NETWORK: {
-      NAME: "Rinkeby",
+      NAME: "Ethereum",
       SYMBOL: "ETH",
-      ID: 4,
+      ID: 1,
     },
     NFT_NAME: "JuJu",
     SYMBOL: "",
@@ -129,7 +129,7 @@ function Apps() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(1)
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,

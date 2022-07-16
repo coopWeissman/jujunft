@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xa2826367e19Cd79b2D61242A669Dc8a45ddA6C43",
+  "CONTRACT_ADDRESS": "0x9cA747C57621705BA102c1B37eF07174Ac43740F",
   "SCAN_LINK": "",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "JuJu Genie",
   "SYMBOL": "JJ",
