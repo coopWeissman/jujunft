@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {connect} from "/Users/cooperweissman/Downloads/hashlips_nft_minting_dapp-main/src/redux/blockchain/blockchainActions.js";
+import {connect} from "/Users/cooperweissman/Downloads/ethereum-boilerplate-main 2/jujunft/src/redux/blockchain/blockchainActions.js";
 import { fetchData } from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import styled from "styled-components";
@@ -97,7 +97,6 @@ export const StyledLink = styled.a`
 function Apps() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
-  const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);

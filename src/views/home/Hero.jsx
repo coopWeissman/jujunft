@@ -1,5 +1,5 @@
 import React from 'react';
-import Mint from './Minter';
+
 
 export default function Hero() {
   return (

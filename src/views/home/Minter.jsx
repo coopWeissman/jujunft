@@ -1,29 +1,29 @@
-import { CreditCardOutlined } from "@ant-design/icons";
-import { Button, Input, notification } from "antd";
-import Text from "antd/lib/typography/Text";
-import { useEffect, useState } from "react";
+// import { CreditCardOutlined } from "@ant-design/icons";
+import { Button, notification } from "antd";
+// import Text from "antd/lib/typography/Text";
+import { useState } from "react";
 import { ethers } from "ethers";
 
 
 function Mint( ) {
 //   const [tx, setTx] = useState();
 //   const [promo, setPromo] = useState();
-  const [isPending, setIsPending] = useState(false);
+  const [isPending] = useState(false);
 
 //   useEffect(() => {
 //     promo ? setTx({ promo }) : setTx();
 //   }, [promo]);
 
-  const openNotification = ({ message, description }) => {
-    notification.open({
-      placement: "bottomRight",
-      message,
-      description,
-      onClick: () => {
-        console.log("Notification Clicked!");
-      },
-    });
-  };
+//   const openNotification = ({ message, description }) => {
+//     notification.open({
+//       placement: "bottomRight",
+//       message,
+//       description,
+//       onClick: () => {
+//         console.log("Notification Clicked!");
+//       },
+//     });
+//   };
 
 
 //connect metamask

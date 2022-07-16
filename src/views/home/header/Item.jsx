@@ -4,6 +4,7 @@ export default function Item({ index, href, icon, text }) {
   return (
     <li>
       <a
+      rel="noreferrer"
         target={icon ? '_blank' : '_self'}
         className={`nav-link scrollto ${index === 0 ? 'active' : ''}`}
         href={href}

@@ -3,8 +3,8 @@ import React from 'react';
 export default function Item({ effect, name, title, icons }) {
   return (
     <div className="col-lg-4 text-center mt-4 mx-auto">
-      <div className="kk">
-        <img src="assets/img/lightning.png" alt="" className="one" />
+      <div className="kk" >
+        <img src="assets/img/lightning.png" className="one" />
         <img src={effect} alt="" className="two" />
       </div>
       <div className="member-info">
