@@ -1,0 +1,44 @@
+[
+  {
+    "id": 4395,
+    "effect": "assets/img/funder.png",
+    "name": "Zach",
+    "title": "Founder",
+    "icons": [
+      {
+        "icon": "ri-twitter-fill",
+        "url": "https://twitter.com/ZadamNFT"
+      }
+    ]
+  },
+  {
+    "id": 6778,
+    "effect": "assets/img/founder3.png",
+    "name": "Ian",
+    "title": "Community Manager",
+    "icons": [
+      {
+        "icon": "ri-twitter-fill",
+        "url": "https://twitter.com/Schill_NFT"
+      }
+    ]
+  },
+  {
+    "id": 9876,
+    "effect": "assets/img/founder4.png",
+    "name": "Malik",
+    "title": "Artist"
+  },
+  {
+    "id": 14234,
+    "effect": "assets/img/founder5.png",
+    "name": "Trevor",
+    "title": "Advisor"
+  },
+  {
+    "id": 65653,
+    "effect": "assets/img/founder6.png",
+    "name": "Alex",
+    "title": "Web3 Nerd"
+  }
+]

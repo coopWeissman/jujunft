@@ -1,0 +1,32 @@
+[
+  {
+    "id": 34,
+    "text": "Welcome",
+    "href": "#bg-3"
+  },
+  {
+    "id": 34,
+    "text": "Geniemap",
+    "href": "#about"
+  },
+  {
+    "id": 34,
+    "text": "Team",
+    "href": "#team"
+  },
+  {
+    "id": 34,
+    "text": "Geniemap",
+    "href": "#about"
+  },
+  {
+    "id": 34,
+    "text": "FAQ",
+    "href": "#faq"
+  },
+  {
+    "id": 34,
+    "icon": "ri-twitter-fill",
+    "href": "https://twitter.com/juju_genie_club"
+  }
+]

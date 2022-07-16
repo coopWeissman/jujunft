@@ -1,0 +1,93 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 768px) {
+
+
+    .slide-image {
+        height: 100%;
+      }
+
+      .slide-image::after{
+        height: 100%;
+      }
+      .hero-img img{
+          height: 200px;
+          width: auto;
+      }
+
+
+    #robot-bg {
+        height: 100%;
+      }
+      #bg-1{
+          height: 100%;
+      }
+      #bg-1:before {
+        height: 100%;
+    }
+      #bg-2{
+        height: 100%;
+    }
+    #bg-2:before {
+        height: 100%;
+    }
+    #bg-3{
+        height: 100%;
+    }
+    #bg-3:before {
+        height: 100%;
+    }
+      #robot-bg:before {
+          height: 100%;
+      }
+       
+    .bot-text{
+        color: #fff;
+        margin-top: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+      .bot-right-text{
+        text-align: center;
+        color: #fff;
+        padding-left: 0;
+        margin-top: 10%;
+      }
+      .robot-img img{
+          width: 100%;
+          padding-top: 10px;
+      }
+      .sectiom-img img{
+        height: 320px;
+        width: 100%;
+      }
+
+      #drone-bg {
+          height: 100%;
+      }
+      
+      #drone-bg:before {
+          height: 100%;
+      }
+      
+      .play-btn-area{
+        text-align: center;
+      }
+      .video-play-button{
+        margin-top: 4%;
+      }
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
